@@ -27,3 +27,6 @@
 ## WSL / ComfyUI
 - Large PyTorch wheels can time out in `uv`: set `UV_HTTP_TIMEOUT=900 UV_HTTP_RETRIES=8` and retry.
 - RTX 50-series (Blackwell) needs PyTorch built for CUDA 12.8 or newer (`cu128` index).
+- **WSL cannot reach pypi.nvidia.com** (connection times out while Windows can) -> `uv pip install torch` fails on the nvidia-* wheels. Fix: on Windows run `pip download torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu128 --extra-index-url https://pypi.org/simple --platform manylinux_2_28_x86_64 --python-version 3.12 --only-binary=:all: --implementation cp -d wheels`, then in WSL install with `--no-index --find-links` (see `pipeline/comfy_finish_wsl.sh`).
+- **Downloads run slowly here (about 1.8 MB/s)**: a 6.9 GB model takes about an hour. Start big downloads early in the background and wait on them with a monitor instead of polling.
+- GitHub pushes can time out once on this network; a plain retry worked.

@@ -3,7 +3,8 @@
 ## 2026-11-07 - Toolkit pass
 - Created this repo structure and the update-every-pass rule.
 - Remotion 4 installed and verified (90-frame 1080p60 test render).
-- ComfyUI install in WSL started (PyTorch cu128); first run notes will be added below.
+- ComfyUI cloned in WSL (venv created). Install blocked: WSL times out on pypi.nvidia.com, so PyTorch wheels and the SDXL base checkpoint are downloading on the Windows side (about 1.8 MB/s). Smoke test (`pipeline/comfy_test.py`) not yet run.
+- Repo created and pushed; `tools/sync_repo.py` copies only whitelisted, sanitised files.
 - Resolve install guidance given (admin required, owner installs).
 
 ## 2026-11-06 - Cut 4 approved
