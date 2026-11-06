@@ -4,7 +4,7 @@ r"""Copy the public-safe parts of the working project into the Motion GitHub rep
     python tools/sync_repo.py --push     # copy + commit + push
 
 Whitelist only: client documents, brand files, product screenshots, downloaded media and renders are never copied.
-The repo clone lives at <project>-repo (created on first run).
+The repo clone lives at D:\client\Motion-repo (created on first run).
 """
 import argparse, os, re, shutil, subprocess, sys
 
@@ -26,8 +26,8 @@ COPY = [
 ]
 SANITIZE = [  # (regex, replacement) applied to copied text files
     (r'r"C:[^"]*"\s*r"[^"]*"\s*r"[^"]*ffmpeg.exe"', 'r"ffmpeg.exe"'),
-    (r"example film", "example film"),
-    (r"brand", "brand"),
+    (r"Refer & Earn", "example film"),
+    (r"UniOcean", "brand"),
     (r"uniocean-mark\.svg", "brand-mark.svg"),
     (r"D:.{1,3}client.{1,3}Motion", "<project>"),
 ]
@@ -38,7 +38,7 @@ def run(*a, cwd=DST):
 
 def copy_file(s, d):
     os.makedirs(os.path.dirname(d), exist_ok=True)
-    if s.endswith(TEXT):
+    if s.endswith(TEXT) and not s.endswith("sync_repo.py"):
         t = open(s, encoding="utf-8").read()
         for pat, rep in SANITIZE:
             t = re.sub(pat, rep, t)

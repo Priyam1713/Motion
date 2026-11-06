@@ -17,7 +17,7 @@
 - `winget` user-scope installs often fail (no applicable installer) -> use portable zips.
 - App Control can block DLLs (numba in Earshot) -> do not bypass; measure with FFmpeg instead.
 - Downloads from Sonniss (Cloudflare) return 403 to scripts -> ask the human to download in a browser. Do not bypass.
-- uniocean-style sites may time out on repeated loads -> retry singly.
+- Some sites may time out on repeated loads -> retry singly.
 
 ## Blender
 - Do not `transform_apply` on a 2D curve; size extrusion from the imported object's dimensions (SVG import is about 0.04 units).

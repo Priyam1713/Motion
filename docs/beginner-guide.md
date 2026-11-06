@@ -50,7 +50,7 @@ Written for the example project (a 34 s referral-programme promo). All timestamp
 
 **Motion and camera**
 - **Transition**: how one scene becomes the next. Cut 4 has nine, e.g. **T2 text mask (4.67–5.33 s)**: the "&" grows and the product shows through it.
-- **Match cut**: a shape or object stays while the scene changes around it (the 15% digits stay while the world flips).
+- **Match cut**: a shape or object stays while the scene changes around it (the number stays while the world flips).
 - **Punch-in / push-in**: the camera moves closer. **Pull-out**: it moves away.
 - **Dive / zoom through**: the camera flies into an object until it fills the frame (**T1 portal, 2.0–2.67 s**, through the logo's loop).
 - **Easing**: how a move accelerates. *ease-out* = fast then settles (landings); *ease-in* = slow then fast (dives); *in-out* = both.
@@ -60,7 +60,7 @@ Written for the example project (a 34 s referral-programme promo). All timestamp
 - **Hold**: how long something stays on screen so it can be read. A "dead stretch" is a hold with nothing moving.
 - **Kinetic typography**: text that moves (the words blur in one per beat at 3.67 s; the **weight sweep** at 25.33 s where "Let's connect." goes hairline and back).
 - **Slot roll**: letters spin like a slot machine before landing (2.67–3.4 s).
-- **Counter**: a number counting up (0→15% at 8.0 s, 0→10% at 10.67 s).
+- **Counter**: a number counting up (a figure counting up on screen).
 - **3D flip / perspective**: a card rotating in depth (**T3, 7.4–8.0 s**).
 - **Mask / clip-path**: a shape that decides what is visible. Used for the ampersand (T2), shatter shards (T5, 16.0 s), blinds (T8, 23.5 s), barn doors (T9, 26.17 s).
 - **Displacement / ripple**: pixels pushed by a noise pattern, like water (**T4, 10.33–11.0 s**).
