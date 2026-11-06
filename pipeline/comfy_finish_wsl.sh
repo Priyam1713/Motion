@@ -6,7 +6,7 @@ export UV_HTTP_TIMEOUT=900 UV_HTTP_RETRIES=8 PATH="$HOME/.local/bin:$PATH"
 cd ~/ComfyUI
 [ -d .venv ] || uv venv --python 3.12 .venv
 . .venv/bin/activate
-uv pip install --no-index --find-links /mnt/d/client/Motion/lab/wheels torch torchvision torchaudio
+uv pip install --no-deps /mnt/d/client/Motion/lab/wheels/*.whl
 uv pip install -r requirements.txt
 mkdir -p models/checkpoints
 [ -f models/checkpoints/sd_xl_base_1.0.safetensors ] || cp /mnt/d/client/Motion/lab/models/sd_xl_base_1.0.safetensors models/checkpoints/

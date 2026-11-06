@@ -15,7 +15,7 @@ Grades: **Worked** (used in a delivered cut), **Tested** (runs, not yet in a cut
 | Earshot (critique) | Automated video+audio critique | MIT | **Worked** (22/23 on cut 4). Blocked later by Windows App Control (numba DLL); not bypassed |
 | librosa, PySceneDetect, pyloudnorm, soundfile | Beat, scene and loudness analysis | ISC/BSD/MIT | **Tested** |
 | Audacity 4 (portable) | Audio inspection | GPL | **Tested** |
-| ComfyUI (WSL, CUDA 12.8) | Local image/video generation | GPL-3.0; each model has its own licence | See changelog for the current state |
+| ComfyUI (WSL, CUDA 12.8) | Local image/video generation | GPL-3.0; each model has its own licence | **Tested 7 Nov 2026.** SDXL base 1.0 text-to-image works on the RTX 5070 Ti (PyTorch 2.11 cu128): 1344x768, 25 steps, 239 s for the first run including model load. Abstract violet-glass waves looked usable as a background plate. Next: LTX-Video / Wan for motion |
 | DaVinci Resolve (free) | Human listening pass, grading, final polish | Blackmagic EULA | **Pending.** Needs admin install by the owner: https://www.blackmagicdesign.com/products/davinciresolve |
 | Inkscape, Krita | Vector / paint | GPL | **Skipped** (installer needs admin) |
 

@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-11-07 - ComfyUI working
+- ComfyUI + SDXL base 1.0 generated its first image (239 s incl. model load). Fix chain is in GOTCHAS (WSL cannot reach pypi.nvidia.com; pip download kept timing out; a resumable curl downloader with hash checks fixed it).
+
 ## 2026-11-07 - Toolkit pass
 - Created this repo structure and the update-every-pass rule.
 - Remotion 4 installed and verified (90-frame 1080p60 test render).

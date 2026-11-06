@@ -21,6 +21,8 @@ COPY = [
     ("tools/install_comfy_wsl.sh", "pipeline/install_comfy_wsl.sh"),
     ("tools/comfy_finish_wsl.sh", "pipeline/comfy_finish_wsl.sh"),
     ("tools/comfy_test.py", "pipeline/comfy_test.py"),
+    ("tools/comfy_run_test.sh", "pipeline/comfy_run_test.sh"),
+    ("lab/dl_urls.py", "pipeline/dl_urls.py"),
     ("tools/sync_repo.py", "pipeline/sync_repo.py"),
     ("lab/remotion-test/package.json", "pipeline/remotion-test/package.json"),
     ("lab/remotion-test/tsconfig.json", "pipeline/remotion-test/tsconfig.json"),
