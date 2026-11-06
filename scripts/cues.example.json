@@ -1,0 +1,8 @@
+{
+ "about": "Minimal example cue file for pipeline/audio/mix.py. Copy the structure of your own cue builder.",
+ "length": 10.0,
+ "output": "out/example-mix.wav",
+ "loudness": {"lufs": -15.3, "tp": -3.0},
+ "music": {"file": "path/to/music.wav", "start": 0.0, "fade_in": 0.003, "fade_out": 0.01, "ref_from": 2.0, "ref_to": 9.0},
+ "note": "See mix.py header for cue fields: t, file, kind, rel (dB vs music), duck, rate, region, sync."
+}
