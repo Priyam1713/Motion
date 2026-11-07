@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-11-07 - Cut 6: cut 1 recreated exactly in 16:9 (nothing added)
+- Owner asked for an exact recreation of cut 1 for the bigger screen: same content, music and screens, only smoother. Cut 5 (which added things) is kept; cut 6 replaces it as the answer to that request.
+- New project `video6/` (cut 1's six scenes re-laid out for 1920x1080, sources in `video6/src/`, built by `build.py`). Same copy, same scene order, same timings and animation beats as cut 1 (43 s, 120 BPM), rendered at 60 fps instead of 30.
+- Soundtrack is cut 1's own mix, unchanged (`assets/audio/refer-earn-cut1-mix.wav`, copied from `archive/cut1/`): same music, same 79 sound cues.
+- Layout changes only, because 9:16 stacks do not fit 16:9: title on one line, "Earn commissions" on one line, diagrams spread across the width, the link card beside its heading, tiles in a 2x2 grid beside the "Track your results" heading, "Two levels. One link." on one line, end card as one centred block with the two rates side by side.
+- No new assets, no generated media, no licence-limited models. Licence log unchanged apart from a pointer.
+- Check: 0 errors; one craft warning kept from cut 1's timing ("Track your results" holds 0.96 s in the recap).
+
 ## 2026-11-07 - Cut 5: cut 1 recreated in 16:9
 - New project `video5/` (cut 4 left untouched). Cut 1's full story at 44 s, 60 fps, 1920x1080, same 180 BPM track (bars 0-29 plus the last two bars, 206 sound cues, mix -15.31 LUFS / -3.2 dBTP).
 - Back from cut 1 and rebuilt: the three-step recap (01 Get your link, 02 Share responsibly, 03 Track your results), "Two levels. One link.", the KOL "You -> brand" connect line (a pulse runs the line, the mark lights on contact), the longer end card.

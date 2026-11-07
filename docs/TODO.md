@@ -15,6 +15,7 @@
 
 - [ ] Cut 5: director review of `previews/refer-earn-cut5_16x9_60fps.mp4`; check the splice at bar 30 (film 40.0 s) by ear.
 - [ ] Cut 5: build a `previews/review-cut5` page like cut 4's.
+- [ ] Cut 6 (cut 1 exact, 16:9): director review of `previews/refer-earn-cut6_16x9_60fps.mp4`; owner to confirm the 16:9 re-layouts keep what they liked.
 
 ## Needs a human
 - [ ] Listen to cut 5 (music splice at 40.0 s, sound audibility) and give notes.
