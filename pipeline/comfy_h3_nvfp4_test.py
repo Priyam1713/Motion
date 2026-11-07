@@ -1,4 +1,4 @@
-"""MiniMax H3 (FastH3-Omni NVFP4 + 4-step turbo LoRA) image-to-video through the ComfyUI API. Run inside WSL.
+"""MiniMax H3 (pruned w6a8 + 4-step turbo LoRA) image-to-video through the ComfyUI API. Run inside WSL.
   python comfy_h3_nvfp4_test.py "prompt" out_prefix first_frame.png [width height length steps]
 Licence-limited (MiniMax H3 Community License): test/internal only."""
 import json, sys, time, urllib.request
@@ -9,7 +9,7 @@ H = int(sys.argv[5]) if len(sys.argv) > 5 else 544
 L = int(sys.argv[6]) if len(sys.argv) > 6 else 124
 S = int(sys.argv[7]) if len(sys.argv) > 7 else 4
 wf = {
- "1a": {"class_type": "UNETLoader", "inputs": {"unet_name": "FastH3-Omni-NVFP4-QAD-pruned_rank8_nvfp4.safetensors", "weight_dtype": "default"}},
+ "1a": {"class_type": "UNETLoader", "inputs": {"unet_name": "minimax_h3_fl2va_pruned_w6a8.safetensors", "weight_dtype": "default"}},
  "1b": {"class_type": "LoraLoaderModelOnly", "inputs": {"model": ["1a", 0], "lora_name": "minimax_h3_fl2v_turbo_4step_v1.0_768p_comfyui_bf16.safetensors", "strength_model": 1.0}},
  "1": {"class_type": "MiniMaxH3SigmaShift", "inputs": {"model": ["1b", 0], "shift_video": 12.0, "shift_audio": 3.0}},
  "2": {"class_type": "CLIPLoader", "inputs": {"clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors", "type": "minimax", "device": "default"}},

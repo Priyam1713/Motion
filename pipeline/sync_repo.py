@@ -37,6 +37,8 @@ COPY = [
     ("tools/comfy_qwen21_test.py", "pipeline/comfy_qwen21_test.py"),
     ("tools/comfy_qwen21_run.sh", "pipeline/comfy_qwen21_run.sh"),
     ("tools/comfy_h3_nvfp4_test.py", "pipeline/comfy_h3_nvfp4_test.py"),
+    ("tools/comfy_h3_w6a8_test.py", "pipeline/comfy_h3_w6a8_test.py"),
+    ("tools/comfy_h3_w6a8_run.sh", "pipeline/comfy_h3_w6a8_run.sh"),
     ("tools/comfy_hyperflow_test.py", "pipeline/comfy_hyperflow_test.py"),
     ("tools/comfy_hyperflow_run.sh", "pipeline/comfy_hyperflow_run.sh"),
     ("tools/sync_repo.py", "pipeline/sync_repo.py"),

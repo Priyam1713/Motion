@@ -62,3 +62,7 @@
 - Owner listened to HyperFlow audio: unusable. i2v: smooth motion, mediocre quality.
 - Sonniss GDC 2024 bundles 1-6 extracted and indexed (503 WAVs, not in the public repo).
 - DaVinci Resolve 21.2 installer downloaded by owner; owner installs it (admin needed).
+
+## 2026-11-07 - MiniMax H3 pruned w6a8 (native ComfyUI) tested
+- `minimax_h3_fl2va_pruned_w6a8.safetensors` (16 GB) + 4-step turbo LoRA + MiniMaxH3SigmaShift 12/3, BasicScheduler simple 4 steps, euler, no CFG. Same plate and prompt as HyperFlow: 960x544, 124 frames, 574 s (HyperFlow 455 s). Mean frame difference 17.8 (HyperFlow 13.5). Palette held, more dramatic (glowing sun appears) but heavy smear/ghosting around frame 90. Verdict: more motion, less clean than HyperFlow. Licence-limited: test only. Audio not evaluated (generated audio already judged unusable).
+- Scripts: `tools/comfy_h3_w6a8_test.py`, `comfy_h3_w6a8_run.sh`.
