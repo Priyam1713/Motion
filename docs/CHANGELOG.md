@@ -44,3 +44,8 @@
 ## 2026-11-07 - HyperFlow H3 Flash tested
 - HyperFlow H3 Flash (Q4_K_M GGUF, 14B) image-to-video from the FLUX 3 plate: 960x544, 124 frames (5.2 s, 24 fps), 6 steps, 455 s on an RTX 5070 Ti 12 GB inside WSL (14 GB RAM cap). Mean frame difference 13.5. Colour stayed on palette for the whole clip (Wan drifted). Audio track generated (mean -30.8 dB). Licence-limited: test/internal only.
 - Needed the audited ComfyUI-HyperFlow-Flash node pack (about 20 KB, no network or subprocess calls) plus ComfyUI-GGUF; installed with owner approval.
+
+## 2026-11-07 - Qwen-Image 2.1 and MiniMax H3 NVFP4
+- Qwen-Image 2.1 (int8 convrot, w4a8 Qwen3-VL 8B encoder): 1664x928, 25 steps, cfg 4, 254 s. Clean, high-contrast result, but research-only licence: test/internal only.
+- MiniMax H3 NVFP4 from DeepBeepMeep (FastH3-Omni) does NOT load in ComfyUI: it is a WanGP-format file (KeyError final_layer.video_out.weight). Use WanGP on Windows for it, or Comfy-Org's own H3 files (smallest `minimax_h3_fl2va_pruned_w6a8.safetensors`, 16 GB; not downloaded).
+- Two failed runs taught a rule: after another model has run, restart ComfyUI before loading the 15.7 GB H3 text encoder (cached models held 11.8 GB RAM and the load failed with HostBuffer.read_file_slice failed). `tools/comfy_restart.sh` now starts with `--fast-disk --cache-none`.

@@ -21,3 +21,6 @@
 | Cut 5: cut 1 recreated in 16:9 on cut 4's engine (copy the project, patch the source, reuse the cue builder) | 44 s, 1920x1080, 60 fps, 206 cues, -15.3 LUFS; check 0 errors; render 6 min 28 s (71 MB) |
 | Wan 2.2 t2v clip as a dimmed background plate (crop to 16:9, minterpolate to 60 fps, ping-pong loop to 8 s) under a dark gradient | Adds depth to the recap and end card without competing with type |
 | Cube-turn transition (perspective on the root, both scenes rotate about an axis 960 px behind the frame) | Tenth unique transition, 2 tweens |
+
+## Qwen-Image 2.1 t2i (tested 2026-11-07, research-only licence)
+- UNETLoader int8_convrot + CLIPLoader type `qwen_image` (qwen3vl_8b_w4a8) + ModelSamplingAuraFlow shift 3.1 + KSampler euler/simple 25 steps cfg 4. 1664x928 in 254 s. Script: `tools/comfy_qwen21_test.py`.

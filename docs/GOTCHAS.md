@@ -47,3 +47,8 @@
 
 ## Models larger than RAM
 - Start ComfyUI with `--fast-disk` so weights stream from disk instead of filling RAM. The 15.7 GB H3 text encoder loaded fine under the 14 GB WSL cap with this flag (about 2.5 GB RAM used). Fall back to `--async-offload` or `--lowvram` if sampling runs out of memory.
+
+## H3 NVFP4 checkpoint is WanGP-only
+- `DeepBeepMeep/MiniMax-H3` files are for WanGP, not ComfyUI (KeyError `final_layer.video_out.weight`). Read the model card's target runtime before downloading 14 GB.
+- Restart ComfyUI (with `--fast-disk --cache-none`) before the H3 text encoder if other models ran first, or the load fails with `HostBuffer.read_file_slice failed`.
+- Python rewrites of shell scripts on Windows can add CRLF line endings and break them in WSL; run `sed -i 's/\r$//'`.

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 pkill -f "main.p[y] --listen" 2>/dev/null; sleep 3
 cd ~/ComfyUI && . .venv/bin/activate
-nohup python main.py --listen 127.0.0.1 --port 8188 > ~/comfy_run.log 2>&1 &
+nohup python main.py --listen 127.0.0.1 --port 8188 --fast-disk --cache-none > ~/comfy_run.log 2>&1 &
 for i in $(seq 1 90); do curl -s http://127.0.0.1:8188/system_stats > /dev/null && break; sleep 2; done
 curl -s http://127.0.0.1:8188/object_info > /tmp/oi.json
 python3 - <<'PY'
