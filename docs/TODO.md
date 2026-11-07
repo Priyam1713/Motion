@@ -3,6 +3,8 @@
 ## Next
 - [x] ComfyUI SDXL smoke test passed.
 - [x] LTX-Video 2B distilled text-to-video smoke test passed.
+- [x] Wan 2.2 TI2V-5B t2v and i2v tests passed.
+- [ ] Wan 2.2: push motion (camera-move prompts, 97+ frames, 1080p), time fp8 vs fp16, try Wan2.2 A14B GGUF if quality justifies the time.
 - [ ] ComfyUI: upscale an LTX clip to 1080p (LTX spatial upscaler or ffmpeg), try image-to-video from an SDXL plate, compare Wan 2.x, time a second SDXL run.
 - [ ] Remotion: port one scene to compare authoring speed with HyperFrames.
 - [ ] Index the Sonniss GameAudioGDC 2024 bundles once downloaded (librosa: duration, loudness, onset), tag by use (UI, impact, riser, ambience).
