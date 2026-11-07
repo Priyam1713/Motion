@@ -25,3 +25,5 @@
 - Do not spend money (music, credits, plans) without approval. Avoid paid music; check Content ID status of free tracks.
 - Do not commit client documents, client brand files, product screenshots, third-party videos, downloaded music/SFX or renders to a public repo.
 - Do not show percentages, earnings or guarantees in a client film unless the client has approved the exact wording.
+
+- DON'T use the audio that AI video models generate (HyperFlow H3 ocean audio was dull and unusable). DO build the soundtrack from licensed SFX and music.

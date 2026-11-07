@@ -25,3 +25,7 @@
 
 ## Qwen-Image 2.1 t2i (tested 2026-11-07, research-only licence)
 - UNETLoader int8_convrot + CLIPLoader type `qwen_image` (qwen3vl_8b_w4a8) + ModelSamplingAuraFlow shift 3.1 + KSampler euler/simple 25 steps cfg 4. 1664x928 in 254 s. Script: `tools/comfy_qwen21_test.py`.
+
+## Verdict on HyperFlow output (owner listening, 2026-11-07)
+- Generated audio: dull, hard to listen to at full volume, attempted ocean sound not usable. Do not use generated audio; mix real SFX (Sonniss etc.) instead.
+- Image-to-video: motion smooth, but image quality is not high. Treat as look-development / motion reference, not final pixels.

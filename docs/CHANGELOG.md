@@ -57,3 +57,8 @@
 - Qwen-Image 2.1 (int8 convrot, w4a8 Qwen3-VL 8B encoder): 1664x928, 25 steps, cfg 4, 254 s. Clean, high-contrast result, but research-only licence: test/internal only.
 - MiniMax H3 NVFP4 from DeepBeepMeep (FastH3-Omni) does NOT load in ComfyUI: it is a WanGP-format file (KeyError final_layer.video_out.weight). Use WanGP on Windows for it, or Comfy-Org's own H3 files (smallest `minimax_h3_fl2va_pruned_w6a8.safetensors`, 16 GB; not downloaded).
 - Two failed runs taught a rule: after another model has run, restart ComfyUI before loading the 15.7 GB H3 text encoder (cached models held 11.8 GB RAM and the load failed with HostBuffer.read_file_slice failed). `tools/comfy_restart.sh` now starts with `--fast-disk --cache-none`.
+
+## 2026-11-07 - Listening verdict, Sonniss, Resolve
+- Owner listened to HyperFlow audio: unusable. i2v: smooth motion, mediocre quality.
+- Sonniss GDC 2024 bundles 1-6 extracted and indexed (503 WAVs, not in the public repo).
+- DaVinci Resolve 21.2 installer downloaded by owner; owner installs it (admin needed).
