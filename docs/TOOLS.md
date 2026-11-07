@@ -27,3 +27,6 @@ Grades: **Worked** (used in a delivered cut), **Tested** (runs, not yet in a cut
 
 ## Looked at, not installed
 Motion Canvas, Three.js, Lottie tooling, TTS engines, generative video models: evaluate only against a concrete shot.
+
+| Subframe Motion MCP / HyperFrames `reverse` | Motion examples; reverse-engineer a video into HTML | MIT examples / Pro feature | **Skipped for the reverse:** HyperFrames `reverse start` is a Pro (paid) feature, so the breakdown was done with ffprobe, numpy and our own sheets instead. No spend. |
+| Cut 10 engine (`cuts/cut10/film.src.html`, `render_seek.mjs`, `tmix`) | Pure-function-of-time HTML film, sub-frame blur | MIT (our own) | **Worked.** 48 s at 1080p60 in about 5 min. |

@@ -25,3 +25,10 @@
 
 ## Later cuts
 Only after the toolkit is maxed out. No new cut until the director asks.
+
+## After cut 10 (2026-11-08)
+- [ ] Owner: listen to cut 10 (mix only measured by us), approve or mark up.
+- [ ] Owner: confirm rates (script 15% / 10% vs docs example 10% / 5%) and permission to show real UI (C1, C9).
+- [ ] Owner: approve every on-screen line in `storyboard/cut10-beat-sheet.md` and the KOL role cards (KOL, Influencer, Creator, Educator, Community lead, Analyst, Podcaster, Publisher).
+- [ ] Check Content ID on Mixkit "Electro Dreams"; if flagged, swap the track (structure needs 8 quiet bars then a pulse).
+- [ ] If approved: portrait 9:16 and 1:1 versions; captions for muted autoplay.

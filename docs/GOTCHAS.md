@@ -52,3 +52,11 @@
 - `DeepBeepMeep/MiniMax-H3` files are for WanGP, not ComfyUI (KeyError `final_layer.video_out.weight`). Read the model card's target runtime before downloading 14 GB.
 - Restart ComfyUI (with `--fast-disk --cache-none`) before the H3 text encoder if other models ran first, or the load fails with `HostBuffer.read_file_slice failed`.
 - Python rewrites of shell scripts on Windows can add CRLF line endings and break them in WSL; run `sed -i 's/\r$//'`.
+
+## Cut 10 build (2026-11-08)
+- **Pills overlapped and the highlight drifted off the text** -> flex items shrank because the row was narrower than its content -> `flex:0 0 auto` on each pill and `width:max-content` on the row.
+- **Second card sat off-centre after the flip** -> I added the first card's translation to a card that was already centred -> give each card its own origin and only share scale and z.
+- **A sound effect needed +53 dB** (mixer warning "capped at +24") -> the Sonniss "Reverse Glass Effect 04" is almost silent -> pick another swell (Orbital Emitter "Searing") and re-run; read the mixer's warnings.
+- **ffmpeg "moov atom not found" right after starting an encode in the background** -> the file is still being written -> wait for `ffprobe` to succeed before muxing.
+- **A ghost of the big headline showed after the snap to the small line** -> a leftover dot layer reused the big glyph grid -> remove it, start the small line 0.1 s earlier so there is no blank gap.
+- **Odometer sat at "00%" for two seconds** -> it rolled late -> roll it while the card pulls forward and hide the digits until the roll starts.

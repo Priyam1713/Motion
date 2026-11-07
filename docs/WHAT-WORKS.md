@@ -33,3 +33,11 @@
 ## Generated-plate film (cut 7, 2026-11-07)
 - Four FLUX 3 stills (45 s each) plus three Wan 2.2 i2v clips (about 8 minutes each) were enough plates for a 32 s dark-ocean film when layered with type, real UI cards and slow zooms. Prompt the motion explicitly and add colour-lock wording ("keep the same violet and navy colour palette") to hold the palette.
 - Transition recipes that rendered cleanly in HyperFrames: circle clip-path iris, conic-gradient mask clock wipe (animate a CSS variable angle), polygon clip-path with a sine wave edge, SVG clipPath rects for zipper bars, radial-gradient mask ink drop, diagonal polygon sweep with a seam bar.
+
+## Reference-driven cut (cut 10, 2026-11-08)
+- Measure the reference before designing: per-frame difference found the single white flash frame (28.17 s) and every dense burst; band-split onsets showed the sound lands 40-60 ms after the picture event and that the hit leads the flash by one frame.
+- One engine for all motion: `window.seek(t)` as a pure function of time plus sub-frame blending (4 sub-frames, `tmix`) rendered the whole 48 s film in about 5 minutes and made the flip and dissolves look filmic.
+- Dot-matrix dissolve as the universal connector: a CSS mask wipe on the element plus a canvas of dots near the wipe edge (glyph-shaped for text, rect-shaped for cards) replaced hard cuts in six places.
+- Rack focus by blurring and darkening only the base plane while the featured card moves forward in the same 3D context.
+- Odometer cues computed from the picture's easing curve (inverse of ease-out cubic) keep every digit tick exactly on the digit change.
+- Pick music by structure, not genre: "Electro Dreams" has 8 bars of quiet bed then a pulse, which matches the reference's quiet-then-pulse shape; offset by the measured kick phase (8.1 s) so the first kick lands on the key visual.

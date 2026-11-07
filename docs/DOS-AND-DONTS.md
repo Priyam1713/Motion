@@ -27,3 +27,11 @@
 - Do not show percentages, earnings or guarantees in a client film unless the client has approved the exact wording.
 
 - DON'T use the audio that AI video models generate (HyperFlow H3 ocean audio was dull and unusable). DO build the soundtrack from licensed SFX and music.
+
+## From the reference-driven cut (2026-11-08)
+- **Do** use a reference's grammar (timing, light, sound structure), never its product, data, logos or assets; replace everything with the client's own.
+- **Do** read the client's live CSS tokens and font before choosing colours; use the real brand gradient and the site's own font (Lato).
+- **Do** rebuild UI from documented features and label figures "Illustrative" while permission to show the real UI is open.
+- **Do** put the impact one frame before a smash cut and let the silence carry it.
+- **Do not** let one element sit on screen near-static for more than about a second; add ambient drift (the 26.4-27.5 s dashboard hold was caught by freezedetect).
+- **Do not** copy the reference's brand-specific claims; our script's wording ("eligible platform fees", "subject to the programme terms") is kept on screen.

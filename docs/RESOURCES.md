@@ -14,3 +14,6 @@
 | Generative images | ComfyUI + open models | Check each model's licence for commercial use (SDXL base: OpenRAIL++) | Testing |
 
 Rule: log every asset (source URL, licence, date, where used) the moment it enters a project.
+
+| Fonts | Lato 400/700/900 (Fontsource via jsDelivr) | SIL OFL 1.1 | Used (cut 10): the site's own font |
+| Music | Mixkit "Electro Dreams" #190 | Mixkit Free License; Content ID unchecked | Used (cut 10) |
