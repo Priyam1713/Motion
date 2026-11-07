@@ -29,3 +29,7 @@
 ## Verdict on HyperFlow output (owner listening, 2026-11-07)
 - Generated audio: dull, hard to listen to at full volume, attempted ocean sound not usable. Do not use generated audio; mix real SFX (Sonniss etc.) instead.
 - Image-to-video: motion smooth, but image quality is not high. Treat as look-development / motion reference, not final pixels.
+
+## Generated-plate film (cut 7, 2026-11-07)
+- Four FLUX 3 stills (45 s each) plus three Wan 2.2 i2v clips (about 8 minutes each) were enough plates for a 32 s dark-ocean film when layered with type, real UI cards and slow zooms. Prompt the motion explicitly and add colour-lock wording ("keep the same violet and navy colour palette") to hold the palette.
+- Transition recipes that rendered cleanly in HyperFrames: circle clip-path iris, conic-gradient mask clock wipe (animate a CSS variable angle), polygon clip-path with a sine wave edge, SVG clipPath rects for zipper bars, radial-gradient mask ink drop, diagonal polygon sweep with a seam bar.

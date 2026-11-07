@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-11-07 - Cut 7 "Under the Surface" (fresh film) and a lean model set
+- Owner asked for a completely fresh cut using everything built so far, and for stale models and assets to be removed.
+- **Cleanup:** deleted the weights and leftovers that were judged low quality or superseded (HyperFlow, MiniMax H3, Qwen-Image 2.1, LTX, SDXL, T5, ESRGAN, install wheels, third-party node packs): about 105 GB freed on D:. Kept only Wan 2.2 5B (Apache-2.0) and FLUX 3 Klein with their encoders and VAEs.
+- **Cut 7:** new concept (a dark-ocean descent), new music (Pixabay #594242 at 172 BPM, edited on bar lines, drop at 11.146 s), new plates (4 FLUX 3 stills, 3 Wan 2.2 i2v clips plus the earlier sea dolly), 85 real Sonniss sound effects, eight unique transitions including a collapse-to-a-point twist before the drop. 32.17 s, 1920x1080, 60 fps, mastered at -15.4 LUFS with a -2.7 dBFS peak. Earshot: launch-grade, 23 of 23 metrics in range.
+- **Plate pipeline that worked:** FLUX 3 still -> Wan 2.2 i2v (97 frames, about 8 minutes each) -> `tools/cut7_plate_convert.py` (optional slow-down, motion-compensated interpolation to 60 fps, crop to 16:9). Scripts: `tools/comfy_cut7_plates.sh`, `tools/cut7_plate_convert.py`.
+- **Lesson:** a dark film makes frame-difference measures read low; keep long holds moving with linear (ease none) zooms and slow drifts, not ease-out tweens that settle to a stop.
+
 ## 2026-11-07 - Cut 6: cut 1 recreated exactly in 16:9 (nothing added)
 - Owner asked for an exact recreation of cut 1 for the bigger screen: same content, music and screens, only smoother. Cut 5 (which added things) is kept; cut 6 replaces it as the answer to that request.
 - New project `video6/` (cut 1's six scenes re-laid out for 1920x1080, sources in `video6/src/`, built by `build.py`). Same copy, same scene order, same timings and animation beats as cut 1 (43 s, 120 BPM), rendered at 60 fps instead of 30.
