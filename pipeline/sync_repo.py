@@ -34,6 +34,8 @@ COPY = [
     ("tools/comfy_flux3_run.sh", "pipeline/comfy_flux3_run.sh"),
     ("tools/comfy_gguf_nodes.sh", "pipeline/comfy_gguf_nodes.sh"),
     ("tools/comfy_restart.sh", "pipeline/comfy_restart.sh"),
+    ("tools/comfy_hyperflow_test.py", "pipeline/comfy_hyperflow_test.py"),
+    ("tools/comfy_hyperflow_run.sh", "pipeline/comfy_hyperflow_run.sh"),
     ("tools/sync_repo.py", "pipeline/sync_repo.py"),
     ("lab/remotion-test/package.json", "pipeline/remotion-test/package.json"),
     ("lab/remotion-test/tsconfig.json", "pipeline/remotion-test/tsconfig.json"),

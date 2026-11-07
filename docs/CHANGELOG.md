@@ -33,3 +33,7 @@
 
 ## 2026-11-04..06 - Cuts 1-3
 - Cut 1 rejected (slow, node diagrams). Cut 2 approved with notes. Cut 3 rejected (SFX inaudible, slow feel, repeated transitions, limited assets). Lessons are in DOS-AND-DONTS.
+
+## 2026-11-07 - HyperFlow H3 Flash tested
+- HyperFlow H3 Flash (Q4_K_M GGUF, 14B) image-to-video from the FLUX 3 plate: 960x544, 124 frames (5.2 s, 24 fps), 6 steps, 455 s on an RTX 5070 Ti 12 GB inside WSL (14 GB RAM cap). Mean frame difference 13.5. Colour stayed on palette for the whole clip (Wan drifted). Audio track generated (mean -30.8 dB). Licence-limited: test/internal only.
+- Needed the audited ComfyUI-HyperFlow-Flash node pack (about 20 KB, no network or subprocess calls) plus ComfyUI-GGUF; installed with owner approval.

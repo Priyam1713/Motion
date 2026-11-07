@@ -42,3 +42,6 @@
 - **Third-party ComfyUI custom nodes run arbitrary code**: installing one (e.g. ComfyUI-GGUF) needs the owner's explicit OK.
 - **Disk**: keep everything on D:. Check `Get-PSDrive C` before heavy work; pip/npm/uv caches default to C:.
 - **Download speed here is about 3.3 MB/s aggregate**: order queues by priority (the model that will actually be delivered first); extra streams do not add speed.
+
+## Models larger than RAM
+- Start ComfyUI with `--fast-disk` so weights stream from disk instead of filling RAM. The 15.7 GB H3 text encoder loaded fine under the 14 GB WSL cap with this flag (about 2.5 GB RAM used). Fall back to `--async-offload` or `--lowvram` if sampling runs out of memory.
