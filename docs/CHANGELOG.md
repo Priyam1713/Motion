@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-11-08 - Take One run (cut 9), Subframe MCP installed
+- Owner approved running Take One (code-only, free), dropped Rossark and Skillry, and approved the Subframe Motion MCP. Cut 9 = Take One monochrome launch film (37.15 s, 60 fps, -14.0 LUFS): Earshot launch-grade 23 of 23, Video Director QA 0 fails. Look: black and white worlds that invert on the beat, the brand gradient only on the two rates. Competitor study and Take One's job log in `cuts/take-one/` (Polymarket and Kalshi pages unreachable from this network; not bypassed).
+
 ## 2026-11-08 - Tool comparison: principle skills
 - Video Director QA run on all seven cuts; its findings (flat frame 0, loudness under -14 LUFS, long holds) plus the Lottie checklist and Emil choreograph rules applied to the Product Launch cut as v2: frozen picture 45.9% -> 2.7%, frame 0 and loudness pass. Earshot launch kit (72 code-made takes) remix: launch-grade 0.923 vs 0.974 for the Sonniss recordings. Details in `docs/TOOL-COMPARISON.md`.
 
