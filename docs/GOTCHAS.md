@@ -1,6 +1,7 @@
 # Gotchas (symptom -> cause -> fix)
 
 ## Renderer (HyperFrames 0.9.x)
+- Lint `nested_media_start_basis_ambiguous` on a `<video>` inside the film composition -> its `data-start` is read as composition-local, which is what we want (the film starts at 0 in the root); the warning is harmless here.
 - **Soundtrack came out quieter than the mix** -> the renderer limits to -3 dBTP when the encoded AAC peaks above -1 dBTP -> mix at -15.3 LUFS with a -3 dBTP ceiling, then compare the master's LUFS with the WAV (`ffmpeg -i f -af ebur128=peak=true -f null -`).
 - **Check/render fails on audio** -> FFmpeg/ffprobe not on PATH in that shell -> prepend FFmpeg's bin directory each session.
 - **Lint: letterSpacing tween** -> not allowed -> use blur and opacity.
@@ -12,6 +13,7 @@
 - CSS `clip-path:url(#id)` with SVG polygons/text works on HTML elements; CSS masks with `--var` radii give halftone and blinds.
 
 ## Windows / shell
+- A Bash tool call with a long heredoc holding quotes, backticks and `$` failed with 'unexpected EOF' -> write the script with the Write tool, then run it.
 - Long Bash heredocs with non-ASCII characters or apostrophes mojibake -> write the script to a file with plain ASCII.
 - Python on Windows paths -> use raw strings.
 - `winget` user-scope installs often fail (no applicable installer) -> use portable zips.

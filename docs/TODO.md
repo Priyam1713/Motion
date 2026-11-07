@@ -13,7 +13,11 @@
 - [ ] Replace Content-ID-flagged music with a clear track (decision pending).
 - [ ] Scene-level VMAF / frozen-frame checks wired into one `qa` script.
 
+- [ ] Cut 5: director review of `previews/refer-earn-cut5_16x9_60fps.mp4`; check the splice at bar 30 (film 40.0 s) by ear.
+- [ ] Cut 5: build a `previews/review-cut5` page like cut 4's.
+
 ## Needs a human
+- [ ] Listen to cut 5 (music splice at 40.0 s, sound audibility) and give notes.
 - [ ] Download Sonniss bundles into `assets/audio/sfx/sonniss/`.
 - [ ] Install DaVinci Resolve (admin) for the listening pass.
 - [ ] Client sign-offs: wording, rates, permission to show real UI.

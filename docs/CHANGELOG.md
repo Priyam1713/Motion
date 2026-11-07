@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-11-07 - Cut 5: cut 1 recreated in 16:9
+- New project `video5/` (cut 4 left untouched). Cut 1's full story at 44 s, 60 fps, 1920x1080, same 180 BPM track (bars 0-29 plus the last two bars, 206 sound cues, mix -15.31 LUFS / -3.2 dBTP).
+- Back from cut 1 and rebuilt: the three-step recap (01 Get your link, 02 Share responsibly, 03 Track your results), "Two levels. One link.", the KOL "You -> brand" connect line (a pulse runs the line, the mark lights on contact), the longer end card.
+- New this pass: Wan 2.2 text-to-video ocean plate (Apache-2.0) behind the recap and end card; a cube-turn transition (tenth unique transition) from the recap to the KOL scene; Lucide icons.
+- Not used: the Blender logo sting (flat material, still on the TODO) and FLUX 3 / MiniMax / HyperFlow (licence-limited).
+- Check: 0 errors (5 lint warnings: nested media start basis, file length). Not yet listened to by the director.
+
 ## 2026-11-08 - FLUX 3 and Wan motion
 - Owner accepted the FLUX 3 licence and downloaded its 3 files in a browser; moved to D:. FLUX 3 Klein nvfp4 made a 1920x1088 image in 43 s.
 - ComfyUI-GGUF nodes installed with approval (clone via Windows git; WSL cannot reach github.com).

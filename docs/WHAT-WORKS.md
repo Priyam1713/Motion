@@ -18,3 +18,6 @@
 - Q4_K_M GGUF + 32B NVFP4 text encoder + H3 video/audio VAEs, `HyperFlowSigmas` 6 steps, euler, BasicGuider (no CFG).
 - 960x544 x 124 frames: 455 s, motion 13.5, palette held, native audio. Best colour fidelity so far among the video models tested.
 - Script: `tools/comfy_hyperflow_run.sh` and `tools/comfy_hyperflow_test.py`.
+| Cut 5: cut 1 recreated in 16:9 on cut 4's engine (copy the project, patch the source, reuse the cue builder) | 44 s, 1920x1080, 60 fps, 206 cues, -15.3 LUFS; check 0 errors; render 6 min 28 s (71 MB) |
+| Wan 2.2 t2v clip as a dimmed background plate (crop to 16:9, minterpolate to 60 fps, ping-pong loop to 8 s) under a dark gradient | Adds depth to the recap and end card without competing with type |
+| Cube-turn transition (perspective on the root, both scenes rotate about an axis 960 px behind the frame) | Tenth unique transition, 2 tweens |
