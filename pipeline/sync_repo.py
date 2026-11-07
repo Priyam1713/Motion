@@ -25,6 +25,8 @@ COPY = [
     ("lab/dl_urls.py", "pipeline/dl_urls.py"),
     ("tools/comfy_ltx_test.py", "pipeline/comfy_ltx_test.py"),
     ("tools/comfy_ltx_run.sh", "pipeline/comfy_ltx_run.sh"),
+    ("tools/comfy_ltx_up.py", "pipeline/comfy_ltx_up.py"),
+    ("tools/hf_queue.py", "pipeline/hf_queue.py"),
     ("tools/sync_repo.py", "pipeline/sync_repo.py"),
     ("lab/remotion-test/package.json", "pipeline/remotion-test/package.json"),
     ("lab/remotion-test/tsconfig.json", "pipeline/remotion-test/tsconfig.json"),

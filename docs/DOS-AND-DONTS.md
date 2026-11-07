@@ -1,6 +1,7 @@
 # Do and do not
 
 ## Do
+- **Always use the best available model or tool.** Check what is current (Hugging Face trending, Artificial Analysis, Arena) before choosing; our first picks (SDXL, LTX-Video 2B) were already outclassed. Test candidates before judging them.
 - Study references frame by frame (dense contact sheets, motion measurements) before designing.
 - Give every transition its own mechanism (portal, mask, flip, ripple, shatter, halftone, grid, blinds, barn doors). Never reuse one.
 - Edit music on bar lines at a fast, full-time tempo (about 175-180 BPM drum and bass worked; 160 BPM future bass felt slow).
@@ -14,6 +15,7 @@
 - Keep telemetry off (`HYPERFRAMES_NO_TELEMETRY=1`).
 
 ## Do not
+- Do not put outputs of licence-limited models (MiniMax H3 / HyperFlow: no display in US/EU/UK/Korea; Qwen-Image 2.1: research-only; gated FLUX 3 until accepted) into a delivered film. Use them for tests and internal looks; deliver with permissively licensed models such as Wan 2.2 (Apache-2.0).
 - Do not use cheap whooshes in picture or sound.
 - Do not scatter small elements on a static frame, and avoid node-and-line diagrams.
 - Do not rely on the same in/out move for several scenes.

@@ -34,3 +34,11 @@
 - **pip --platform on Windows skips Linux-only dependencies** (torch's `cuda-toolkit`, cudnn, nccl, triton are marked `platform_system == "Linux"`) -> name them explicitly. PyPI default `torch` is not the cu128 build; pin `torch==2.11.0+cu128` from the PyTorch index.
 - **Install offline wheels with `uv pip install --no-deps *.whl`**, and keep only one wheel per package (a duplicate NCCL version caused a URL conflict).
 - **MSYS path conversion**: from Git Bash, call `MSYS_NO_PATHCONV=1 wsl -d Ubuntu-24.04 -- bash /mnt/d/...`; inline `bash -lc` strings with `$(...)` get mangled, so put commands in a script file.
+
+- **WSL RAM cap**: a 97-frame 4x ESRGAN upscale at once exceeded WSL's 14 GB cap and crashed the WSL service (`Wsl/Service/E_UNEXPECTED`). Recover with `wsl --shutdown`; never raise the cap, process in chunks instead.
+- **Chunked ESRGAN produced a dark 12-frame block** (frames 24-35 at about 20% brightness) in an image-to-video clip while the native clip was smooth. Always measure per-frame brightness (`signalstats` YAVG) after any batched processing. Plain Lanczos looked crisper than RealESRGAN on particle footage, so skip ESRGAN for this content.
+- **Gated Hugging Face repos** (e.g. black-forest-labs FLUX 3) return 401 `GatedRepo`: the human must log in and accept the licence; do not route around the gate with third-party mirrors.
+- **Killing background jobs by command-line match**: a `Get-CimInstance ... CommandLine -match 'name'` filter also matches the command that contains it and kills your own shell (exit 255). Use a bracket trick such as `hf_queu[e]`.
+- **Third-party ComfyUI custom nodes run arbitrary code**: installing one (e.g. ComfyUI-GGUF) needs the owner's explicit OK.
+- **Disk**: keep everything on D:. Check `Get-PSDrive C` before heavy work; pip/npm/uv caches default to C:.
+- **Download speed here is about 3.3 MB/s aggregate**: order queues by priority (the model that will actually be delivered first); extra streams do not add speed.

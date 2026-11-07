@@ -17,6 +17,9 @@ Grades: **Worked** (used in a delivered cut), **Tested** (runs, not yet in a cut
 | Audacity 4 (portable) | Audio inspection | GPL | **Tested** |
 | ComfyUI + LTX-Video 2B 0.9.8 distilled | Local text-to-video for background plates | LTX Video open-weights licence (check terms for commercial use before using in a delivered film) | **Tested 7 Nov 2026.** 768x448, 97 frames (4 s at 24 fps), 8 steps, cfg 1, 73.7 s on the RTX 5070 Ti. Result: coherent glowing particle waves with gentle camera drift; motion is subtle, resolution needs upscaling (1080p) before use. Files: `ltxv-2b-0.9.8-distilled.safetensors` (6.3 GB) + `t5xxl_fp8_e4m3fn_scaled.safetensors` (5.2 GB); scripts `pipeline/comfy_ltx_run.sh`, `pipeline/comfy_ltx_test.py` |
 | ComfyUI (WSL, CUDA 12.8) | Local image/video generation | GPL-3.0; each model has its own licence | **Tested 7 Nov 2026.** SDXL base 1.0 text-to-image works on the RTX 5070 Ti (PyTorch 2.11 cu128): 1344x768, 25 steps, 239 s for the first run including model load. Abstract violet-glass waves looked usable as a background plate. Next: LTX-Video / Wan for motion |
+| MiniMax H3 / HyperFlow H3 Flash | Best open-weight video (per Arena); H3 community licence excludes outputs shown in US/EU/UK/Korea | Test only; see LICENCE note | **Downloading for tests 7 Nov 2026** |
+| Wan 2.2 TI2V-5B | Apache-2.0 video model, the safest licence | Apache-2.0 | **Downloading for tests 7 Nov 2026** |
+| Qwen-Image 2.1 / FLUX 3 Klein | Newest open image models | Qwen: research-only. FLUX 3: gated, user must accept | Qwen downloading; FLUX waiting on user |
 | DaVinci Resolve (free) | Human listening pass, grading, final polish | Blackmagic EULA | **Pending.** Needs admin install by the owner: https://www.blackmagicdesign.com/products/davinciresolve |
 | Inkscape, Krita | Vector / paint | GPL | **Skipped** (installer needs admin) |
 

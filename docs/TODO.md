@@ -11,6 +11,8 @@
 - [ ] Scene-level VMAF / frozen-frame checks wired into one `qa` script.
 
 ## Needs a human
+- [ ] Accept the FLUX 3 licence on Hugging Face and place the three files (owner is downloading them in the browser).
+- [ ] Approve installing ComfyUI-GGUF custom nodes (third-party code) so HyperFlow GGUF can load.
 - [ ] Download Sonniss bundles into `assets/audio/sfx/sonniss/`.
 - [ ] Install DaVinci Resolve (admin) for the listening pass.
 - [ ] Client sign-offs: wording, rates, permission to show real UI.
