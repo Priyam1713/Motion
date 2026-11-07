@@ -2,7 +2,8 @@
 
 ## Next
 - [x] ComfyUI SDXL smoke test passed.
-- [ ] ComfyUI: try a motion model (LTX-Video or Wan 2.x) for B-roll; time a second SDXL run (model already loaded).
+- [x] LTX-Video 2B distilled text-to-video smoke test passed.
+- [ ] ComfyUI: upscale an LTX clip to 1080p (LTX spatial upscaler or ffmpeg), try image-to-video from an SDXL plate, compare Wan 2.x, time a second SDXL run.
 - [ ] Remotion: port one scene to compare authoring speed with HyperFrames.
 - [ ] Index the Sonniss GameAudioGDC 2024 bundles once downloaded (librosa: duration, loudness, onset), tag by use (UI, impact, riser, ambience).
 - [ ] Blender: improve the logo material (less matte) and fix the inner-edge gap; try a shorter, punchier sting.
