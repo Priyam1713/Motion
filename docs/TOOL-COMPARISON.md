@@ -4,7 +4,7 @@
 
 **Scorecard (same for every cut).** Format (1920x1080, 60 fps), loudness and true peak, frozen-picture share, an Earshot critique against its bundled launch films, setup effort, render time, and a human verdict (watch and listen; Claude can only measure).
 
-## Results so far (6 of 15 built, plus a documented decision on Take One)
+## Results so far (6 cuts from production tools, 2 variants from principle skills)
 
 | Tool | What it is | Setup | Render | Format | Loudness / peak | Earshot | Verdict so far |
 |---|---|---|---|---|---|---|---|
@@ -26,14 +26,25 @@
 - **Real docs vs the script.** Recording the live referral docs showed example rates of 10%/5% against the script's 15%/10%: confirm with the client before any real-UI footage ships (C1, C9).
 - **Invented UI.** Skills that "rebuild" a product screen in code invent labels. Use real captures only, and keep claims and qualifiers on screen.
 
-## Not yet built (8), with what each needs
+## Principle skills: applied to the best cut (Product Launch Motion)
 
-| Tool | Kind | Plan / blocker |
-|---|---|---|
-| Video Director | Planning, timeline validation, automated checks | Use its checks on the cuts above |
-| Emil Kowalski skills, LottieFiles motion-design skill | Motion craft principles (easing, timing, choreography) | Apply as a review checklist and measure what changes |
-| Earshot | Audio analysis and code-made sound effects | Already used for every critique; next: re-mix one cut with its `launch` kit and compare |
-| Reanimate | Recreate a web animation by frame comparison | Needs a reference animation to copy; Bun |
-| Rossark Motion | Animating drawn SVG characters for React Native / SwiftUI | Mostly not for video; test on the referral avatars only |
-| Subframe Motion | 309 open-source React animations and WebGL shaders, delivered over an MCP server | Needs your OK to install the MCP; examples can inspire backdrops without it |
-| Skillry LaunchMotion | 208 editable launch scenes for Claude Code | Paid library (Pro); no spend without your OK |
+These four do not render films; their value is in checks and rules. We ran each on our cuts, applied the findings to the best cut as "v2", and re-measured.
+
+| Skill | What we did | Measured effect | Verdict |
+|---|---|---|---|
+| **Video Director** (win4r) | Ran `qa_video.py` on all seven cuts (frame 0, loudness vs -14 LUFS, frozen stretches, pops, silences, phone and hook sheets) | Found real flaws the other tools missed: a flat frame 0 on every bright layout (muted autoplay and thumbnails show it), loudness 1-1.5 LU under its target, long still holds. After the fixes: frame-0 fail gone, master at -14.1 LUFS with the peak at -1.0 dBTP, frozen picture 45.9% -> 2.7% | **Improves films.** Best of the set for checking: cheap, specific, and it tells you what to fix. Keep it as the final gate. |
+| **Lottie motion-design** | Used its quality checklist (primary/secondary/ambient layers, follow-through, entrance vs exit length, stagger limits) | The missing **ambient layer** was the main finding: calm holds had nothing moving. Added slow float, card breathing and an idle cursor sway | **Improves films**, mostly as a checklist. UI-oriented; the philosophy files are long, the checklist is the useful part. |
+| **Emil Kowalski skills** | Applied `choreograph` (cast lead/support/decoration, one entrance per container, no uniform stagger) | Replaced identical fade-ins with per-element delay, distance and duration; one entrance per container | **Improves films**, small but real. The rules are written for interactive UI; the transferable ones are "no uniform stagger" and "cut moving parts". |
+| **Earshot sound kit** | Rendered the `launch` kit (72 code-made takes in 6 s, no network) and remixed the same picture with them instead of the Sonniss recordings | Both versions launch-grade: Sonniss 0.974, Earshot kit 0.923 (its critique: "too many salient hits", 1.87 per second against 0.10-1.66 in the references). Neither was flagged as synthesized because the real music carries the mix | **Makes sound, with a caveat.** Instant, deterministic, no licence worry; use fewer, softer hits than we placed. Real recordings still edge it. |
+
+Net effect of the v2 pass on the same film: Earshot 0.973 -> 0.974 (unchanged), frozen share 45.9% -> 2.7%, frame 0 passes, loudness on target. The principle skills fixed what the launch-film scorecard cannot see.
+
+## Not built, with reasons
+
+| Tool | Reason |
+|---|---|
+| Take One | Own cost note: about 0.4-0.7M tokens and 1-2 hours per 30 s film; asks before spending. Ready on this machine. |
+| Reanimate | Recreates a reference animation by frame comparison; needs a reference to copy and Bun. Not run for this script. |
+| Rossark Motion | Animating drawn SVG characters for React Native and SwiftUI; not a video tool. |
+| Subframe Motion | 309 React animations and shaders, delivered through an MCP server; install needs the owner's OK. Examples can inspire backdrops. |
+| Skillry LaunchMotion | Paid library (Pro); no spend without the owner's OK. |

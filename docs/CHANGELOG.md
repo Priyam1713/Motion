@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-11-08 - Tool comparison: principle skills
+- Video Director QA run on all seven cuts; its findings (flat frame 0, loudness under -14 LUFS, long holds) plus the Lottie checklist and Emil choreograph rules applied to the Product Launch cut as v2: frozen picture 45.9% -> 2.7%, frame 0 and loudness pass. Earshot launch kit (72 code-made takes) remix: launch-grade 0.923 vs 0.974 for the Sonniss recordings. Details in `docs/TOOL-COMPARISON.md`.
+
 ## 2026-11-08 - Tool comparison: production tools
 - Built and scored Huashu Art Motion (launch-grade 0.974), Animate riso (launch-grade 0.974, 24 fps, no real UI), Argo (needs work 0.744, demo-recorder; found the docs-vs-script rate conflict). Take One deliberately not run (about 0.4-0.7M tokens, asks before spending). Results table and lessons in `docs/TOOL-COMPARISON.md`.
 
