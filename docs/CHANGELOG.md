@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-11-08 - FLUX 3 and Wan motion
+- Owner accepted the FLUX 3 licence and downloaded its 3 files in a browser; moved to D:. FLUX 3 Klein nvfp4 made a 1920x1088 image in 43 s.
+- ComfyUI-GGUF nodes installed with approval (clone via Windows git; WSL cannot reach github.com).
+- Wan 2.2 5B with camera-move prompts: dolly clip 18.0 mean frame diff (vs 1.4), 488 s per 97 frames at 1280x704; text-to-video burst 2.9. Colour drifts from the source plate.
+
 ## 2026-11-08 - Wan 2.2 TI2V-5B tested
 - Wan 2.2 5B produced clean 1280x704 clips natively (t2v 298 s, i2v 237 s, 49 frames); brightness stable, no artifacts; visibly better than LTX 2B. Motion is subtle. Apache-2.0, so it is the delivery model. Copying 10 GB from /mnt/d into WSL takes about 15 min: copy once.
 

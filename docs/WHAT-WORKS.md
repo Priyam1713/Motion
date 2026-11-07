@@ -10,4 +10,6 @@
 | Continuous slow camera pushes on holds | Frozen frames 16.3% -> 5.9% (longest 0.33 s); references run 2-33% |
 | Mix at -15.3 LUFS / -3 dBTP | Renderer left the track untouched; master measured -15.4 LUFS |
 | Blender Cycles + OptiX on an RTX 5070 Ti Laptop | About 12 s/frame at 1080p for a glossy 3D logo with alpha |
+| Wan 2.2 5B image-to-video from a FLUX 3 plate with a camera-move prompt ("dollies forward fast and low... swells roll toward the lens") | Mean frame difference 18.0 vs 1.4 for the first gentle prompt (about 13x more motion); 97 frames, 1280x704, 488 s. It drifts from the plate colour (violet to pink-white spray), so keep prompts specific about colour. Prompt the camera and the physics explicitly; "slow, smooth, gentle" prompts give almost static video |
+| FLUX 3 Klein for stills | 1920x1088 in 43 s, 4 steps |
 | Remotion 4 (React) | Installed and rendered a 90-frame 1080p60 test in under a minute on this PC |
