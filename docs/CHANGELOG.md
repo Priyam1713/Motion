@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-11-08 - Tool comparison: production tools
+- Built and scored Huashu Art Motion (launch-grade 0.974), Animate riso (launch-grade 0.974, 24 fps, no real UI), Argo (needs work 0.744, demo-recorder; found the docs-vs-script rate conflict). Take One deliberately not run (about 0.4-0.7M tokens, asks before spending). Results table and lessons in `docs/TOOL-COMPARISON.md`.
+
 ## 2026-11-08 - Tool comparison: first three cuts
 - Director disliked cut 7's background and music and asked to test a list of motion skills and libraries by making one cut of the same script with each. Shared brief, scorecard and a finishing script (`cuts/_tools/finish_cut.py`) so every cut is measured the same way.
 - Built and scored: Product Launch Motion (launch-grade 0.973), Huashu Motion (0.923; synthesized-music flag), Explainroo (0.897; narrated, 30 fps). Full table and lessons: `docs/TOOL-COMPARISON.md`.
