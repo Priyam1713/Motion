@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-11-08 - Tool comparison: first three cuts
+- Director disliked cut 7's background and music and asked to test a list of motion skills and libraries by making one cut of the same script with each. Shared brief, scorecard and a finishing script (`cuts/_tools/finish_cut.py`) so every cut is measured the same way.
+- Built and scored: Product Launch Motion (launch-grade 0.973), Huashu Motion (0.923; synthesized-music flag), Explainroo (0.897; narrated, 30 fps). Full table and lessons: `docs/TOOL-COMPARISON.md`.
+- New shared renderer `tools/render_seek.mjs` (seek(t) pages, one browser per worker, 4-subframe motion blur, ffmpeg tmix). Shared music edit (Pixabay 562842, 117 BPM). 12 resources still to build (see the comparison page).
+
 ## 2026-11-07 - Cut 7 "Under the Surface" (fresh film) and a lean model set
 - Owner asked for a completely fresh cut using everything built so far, and for stale models and assets to be removed.
 - **Cleanup:** deleted the weights and leftovers that were judged low quality or superseded (HyperFlow, MiniMax H3, Qwen-Image 2.1, LTX, SDXL, T5, ESRGAN, install wheels, third-party node packs): about 105 GB freed on D:. Kept only Wan 2.2 5B (Apache-2.0) and FLUX 3 Klein with their encoders and VAEs.
