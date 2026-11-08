@@ -1,5 +1,8 @@
 # What works (with numbers)
 
+## Studying a reference
+- Read **every frame** on labelled 24-frame sheets, then measure: edge vs centre sharpness (Laplacian per unit gradient), vignette, frozen-frame share, camera scale per frame, and per-hit sound character. Running the same script on our own cut turns "feels off" into numbers (e.g. frozen 6% vs 20%, camera scale change 0.44% vs 0.03% per frame).
+
 | Technique | Result |
 |---|---|
 | Real captured product imagery (headless Chrome) | Biggest visual upgrade between cuts 3 and 4 |

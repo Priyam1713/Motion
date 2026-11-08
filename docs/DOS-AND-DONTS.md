@@ -1,5 +1,11 @@
 # Do and do not
 
+## From the 9 Nov deep pass
+- Do keep the camera moving on every hold (slow pull-back on text, push-in on objects) and accelerate into exits.
+- Do give UI shots real depth of field and macro framing; one idea per frame.
+- Do keep sound sparse, dark and centred around about 1 strong hit per second, with real silences.
+- Don't build the next reference cut until the owner approves the breakdown report.
+
 ## Do
 - **Always use the best available model or tool.** Check what is current (Hugging Face trending, Artificial Analysis, Arena) before choosing; our first picks (SDXL, LTX-Video 2B) were already outclassed. Test candidates before judging them.
 - Study references frame by frame (dense contact sheets, motion measurements) before designing.

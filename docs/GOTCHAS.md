@@ -1,5 +1,10 @@
 # Gotchas (symptom -> cause -> fix)
 
+## Reference analysis
+- **Tempo read as 92.9 BPM** -> a syncopated hit every 1.5 beats was taken for the beat -> fit a beat grid (librosa beat_track plus a phase fit on 16ths) and check that snares and 808s fall on fixed beat positions; the reference was 140 BPM half-time.
+- **Crops of "full-res" frames came out black** -> the extracted frames were 640x360, not 1280x720 -> extract key frames straight from the video with `select=eq(n,N)`.
+- **Sheets at 4 fps missed the important details** (accelerating carousel, ghost echo, rising words, self-pressing button) -> read every frame (24 per sheet) at least once.
+
 ## Renderer (HyperFrames 0.9.x)
 - Lint `nested_media_start_basis_ambiguous` on a `<video>` inside the film composition -> its `data-start` is read as composition-local, which is what we want (the film starts at 0 in the root); the warning is harmless here.
 - **Soundtrack came out quieter than the mix** -> the renderer limits to -3 dBTP when the encoded AAC peaks above -1 dBTP -> mix at -15.3 LUFS with a -3 dBTP ceiling, then compare the master's LUFS with the WAV (`ffmpeg -i f -af ebur128=peak=true -f null -`).
