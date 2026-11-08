@@ -1,6 +1,9 @@
 # What works (with numbers)
 
 ## Studying a reference
+- **Same timeline as the reference** (cut 11): building on the reference's exact frame numbers makes every comparison like-for-like: one script pulls both films at the same frame and the per-frame measurements line up shot by shot.
+- **Composing the score in code** on the measured beat grid gives frame-exact sync and no licence risk; tempo and key measure back exactly (140.6 BPM, E minor).
+- **Per-shot camera check**: measure camera scale per shot for both films. Cut 11's first render was 5-30x too static in the UI shots; raising push, pull and scroll speeds took the median from 0.08% to 0.32% per frame (reference 0.44%).
 - Read **every frame** on labelled 24-frame sheets, then measure: edge vs centre sharpness (Laplacian per unit gradient), vignette, frozen-frame share, camera scale per frame, and per-hit sound character. Running the same script on our own cut turns "feels off" into numbers (e.g. frozen 6% vs 20%, camera scale change 0.44% vs 0.03% per frame).
 
 | Technique | Result |

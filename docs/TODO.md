@@ -4,9 +4,10 @@
 - [ ] Owner reads `storyboard/cut12-reference-teardown.md` and answers section 8: VO source, forecast-flow UI screenshots, logo, music-bed by ear, script open points.
 - [ ] Then: one-scene test (scenes 0-1: glass lens, foley), then the full cut at 1920x1080 30 fps.
 
-## Cut 11 (waiting on the owner)
-- [ ] Owner reviews `DEEP-PASS-v2` and answers: font (Inter-like vs Lato), music feel (140 half-time minor vs upbeat major), end card (logo only vs script lines), real-UI screenshots of Referral page / link panel / dashboard, length (37-40 s).
-- [ ] Then build cut 11 to the reference's exact shot map, timings and sound map.
+## Cut 11 reference replica
+- [x] Owner approved the deep-pass report (9 Nov): Inter-like type, reference first in every aspect, logo-only silent end card, real UI from their screenshots, about 37 s.
+- [x] Built cut 11 on the reference's exact frames (891 frames, 24 fps) with an original 140.6 BPM E-minor score composed to the reference's measured timeline.
+- [ ] Owner's listening and viewing pass on `previews/refer-earn-cut11_reference-replica_16x9_24fps.mp4`.
 - [x] Separated the reference audio (Demucs 6-stem): no separate effects layer; effects are built into the track.
 
 ## Next
