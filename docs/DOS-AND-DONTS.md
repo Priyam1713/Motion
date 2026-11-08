@@ -41,3 +41,5 @@
 - **Do** put the impact one frame before a smash cut and let the silence carry it.
 - **Do not** let one element sit on screen near-static for more than about a second; add ambient drift (the 26.4-27.5 s dashboard hold was caught by freezedetect).
 - **Do not** copy the reference's brand-specific claims; our script's wording ("eligible platform fees", "subject to the programme terms") is kept on screen.
+
+- Do (9 Nov 2026): when the client has already approved a film, measure it before building (subtitle-strip diff gives VO timing without a transcriber) and list where it falls short of the new script; the approved grammar stays, the flaws get fixed.
