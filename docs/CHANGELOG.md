@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-11-09 - Cut 12 "Every Decimal Matters" built (87 s, 1920x1080, 30 fps)
+- Approved by the owner after the teardown; follows the revised script (BTC, 110K-60K scale bar, YOU rank sequence #4,#2,#5,#3,#1,#2,#1, tie-break timestamp, log index, block number, 51% / 70%, 1,000 to 100,000 entries, EVENT NOT FULL, 0.01 lens to logo). Fixes the reference's contradictions (settled list, capacity bar, garbled title morph).
+- Build: one deterministic `seek(t)` HTML page (`cuts/cut12/index.html` + `film.js`, `s4.js`, `s5.js`, `s6.js`), Chrome frame capture with 4 sub-frames per frame and tmix (10,440 captures in about 3.5 min), glass lens = magnified clone of the live world inside a clipped circle (real magnification of whatever is under it, SVG rim, handle, specular). Rank list, pins and live line all computed from one price path so the abacus cues land on every real rank change (`window.CUES` dumped to `cues.json` is the single source for sound timing).
+- Voice: Kokoro af_heart (female, Apache-2.0) at speed 1.06, sentence clips with word timings; 65.5 s of speech; subtitles burned in. Foley: 39 CC0 Freesound clips (cards, glass slide, typewriter key, domino, toggle, weights, wooden clacks, hole punch, stamp, receipt/label printer, clicker, ratchet, keys, latch) placed by cue; no music, no ka-ching/whoosh. Mix -16.0 LUFS, -1.5 dBTP, SFX stem peaks about 6 dB under the voice.
+- Output `previews/uniocean_every-decimal-matters_cut12_16x9_30fps.mp4` (87.0 s). Not yet listened to; not yet run through qa_video / Earshot.
+
 ## 2026-11-09 - Cut 11 "Reference replica" (example film)
 - Owner approved the deep-pass report: Inter-like type, the reference first in every aspect, logo-only silent end card, real brand UI (owner's own screenshots of the signed-in example film page plus the public homepage), about 37 s.
 - The reference's own music could not be used (third-party recording, no published credit or licence). Instead composed an original score in code on the reference's measured timeline: 140.6 BPM half-time, E minor, 808 drop at 7.08 s, snares on the snap re-frames, stutters, choke after the white frame, silence, reverse swell into a sub boom on the URL. Effects are part of the score (same key and drum palette), as the reference's stem split showed. Measured back: 140.6 BPM, E minor; -13.3 LUFS, -1.0 dBFS peak.

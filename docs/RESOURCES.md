@@ -17,3 +17,5 @@ Rule: log every asset (source URL, licence, date, where used) the moment it ente
 
 | Fonts | Lato 400/700/900 (Fontsource via jsDelivr) | SIL OFL 1.1 | Used (cut 10): the site's own font |
 | Music | Mixkit "Electro Dreams" #190 | Mixkit Free License; Content ID unchecked | Used (cut 10) |
+
+- (9 Nov 2026) Openverse audio API api.openverse.org (CC0/PDM filter): worked. @fontsource Manrope / JetBrains Mono via jsDelivr: worked.

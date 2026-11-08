@@ -47,3 +47,7 @@
 - Rack focus by blurring and darkening only the base plane while the featured card moves forward in the same 3D context.
 - Odometer cues computed from the picture's easing curve (inverse of ease-out cubic) keep every digit tick exactly on the digit change.
 - Pick music by structure, not genre: "Electro Dreams" has 8 bars of quiet bed then a pulse, which matches the reference's quiet-then-pulse shape; offset by the measured kick phase (8.1 s) so the first kick lands on the key visual.
+
+- (9 Nov 2026) Magnifier as a cloned DOM: `cloneNode(true)` of the whole animated world, scaled and translated inside a circular overflow:hidden glass, gives a true magnifier on live text and UI for any frame in `seek(t)`; a `.rv` rule makes title words visible inside the lens before the world reveals them (title is revealed by the lens). Row reorders as a sum of eased rank deltas (`pos = r0 + sum(delta * ease(t - te))`) never overlap rows or jump when two changes are close.
+- (9 Nov 2026) Subtitle-strip pixel diff at 30 fps recovers voice-over timing from a finished video with no speech-to-text model.
+- (9 Nov 2026) Kokoro af_heart per-sentence clips with word timestamps drive both the picture (landing a number on the word 'hundred') and the subtitles.

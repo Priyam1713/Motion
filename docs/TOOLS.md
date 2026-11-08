@@ -34,3 +34,8 @@ Motion Canvas, Three.js, Lottie tooling, TTS engines, generative video models: e
 
 | Subframe Motion MCP / HyperFrames `reverse` | Motion examples; reverse-engineer a video into HTML | MIT examples / Pro feature | **Skipped for the reverse:** HyperFrames `reverse start` is a Pro (paid) feature, so the breakdown was done with ffprobe, numpy and our own sheets instead. No spend. |
 | Cut 10 engine (`cuts/cut10/film.src.html`, `render_seek.mjs`, `tmix`) | Pure-function-of-time HTML film, sub-frame blur | MIT (our own) | **Worked.** 48 s at 1080p60 in about 5 min. |
+
+## Cut 12 (9 Nov 2026)
+- Kokoro-82M (`af_heart`, CPU, Apache-2.0): worked; natural warm female read, word timestamps; pronunciation of 'brand' fixed with a phoneme override. Listening pass by the owner pending.
+- Openverse API (CC0 Freesound previews): worked for cards, glass, typewriter, domino, toggle, hole punch, stamp, printers, clicker, ratchet, keys, latch; partly for brass weight and abacus (stand-ins: laid weights, wooden clacks); no CC0 adding-machine key or label maker found.
+- Chrome seek renderer + tmix (cuts/_tools/render_seek.mjs): worked, 50 captures/s on 3 workers.

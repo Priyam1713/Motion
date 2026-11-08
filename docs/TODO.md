@@ -42,3 +42,8 @@ Only after the toolkit is maxed out. No new cut until the director asks.
 - [ ] Owner: approve every on-screen line in `storyboard/cut10-beat-sheet.md` and the KOL role cards (KOL, Influencer, Creator, Educator, Community lead, Analyst, Podcaster, Publisher).
 - [ ] Check Content ID on Mixkit "Electro Dreams"; if flagged, swap the track (structure needs 8 quiet bars then a pulse).
 - [ ] If approved: portrait 9:16 and 1:1 versions; captions for muted autoplay.
+
+## Cut 12 review (after build)
+- [ ] Owner listens to `previews/uniocean_every-decimal-matters_cut12_16x9_30fps.mp4`: voice choice (af_heart vs another Kokoro voice), foley stand-ins (typewriter for adding machine, laid weights for brass), loudness.
+- [ ] Run qa_video.py / Earshot on cut 12; fix flagged holds.
+- [ ] Optional: true refraction lens (WebGL/Blender), real UI screenshots of the forecast flow to replace the rebuilt UI.

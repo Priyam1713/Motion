@@ -71,3 +71,8 @@
 - **ffmpeg "moov atom not found" right after starting an encode in the background** -> the file is still being written -> wait for `ffprobe` to succeed before muxing.
 - **A ghost of the big headline showed after the snap to the small line** -> a leftover dot layer reused the big glyph grid -> remove it, start the small line 0.1 s earlier so there is no blank gap.
 - **Odometer sat at "00%" for two seconds** -> it rolled late -> roll it while the card pulls forward and hide the digits until the roll starts.
+
+- (9 Nov 2026) Kokoro on Windows: `uv pip install kokoro` then the spaCy model must be installed into the venv (`en_core_web_sm` wheel) or misaki tries `uv pip` without a venv and fails; set HF_HUB_DISABLE_SYMLINKS_WARNING; write vo.json with encoding utf8 (phoneme markup has non-cp1252 characters).
+- (9 Nov 2026) Openverse/Freesound foley: use `license=cc0,pdm` with 1-2 word queries (long phrases return nothing); a failed download leaves a 0-byte file, delete and retry; the Wikimedia 'LL-' results are speech, skip them; Wikimedia returns 429 if hit fast.
+- (9 Nov 2026) Word timings from Kokoro tokenise spoken forms ('U S D T', 'Uni Ocean'), so look up 'at', 'ocean' etc., not 'brand' (the lookup threw and silently blanked the last scene until checked with a page-error probe, cuts/cut12/dbg.mjs).
+- (9 Nov 2026) Bash tool blocks `rm` with a glob after a cd; use a fresh directory instead of clearing one.

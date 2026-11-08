@@ -43,3 +43,6 @@
 - **Do not** copy the reference's brand-specific claims; our script's wording ("eligible platform fees", "subject to the programme terms") is kept on screen.
 
 - Do (9 Nov 2026): when the client has already approved a film, measure it before building (subtitle-strip diff gives VO timing without a transcriber) and list where it falls short of the new script; the approved grammar stays, the flaws get fixed.
+
+- Do (9 Nov 2026): rank/price logic must be a real computation (one price path -> ranks, rows, pins, sound cues); a hand-keyed rank list contradicts the pins. Check the script's rank sequence is feasible before drawing: the user pin can only reach #4 or #5 if it is an extreme pin.
+- Do not: let two scenes cross-dissolve with readable text (double headers at 34.7 s in the first render); finish the exit before the next scene's text enters.
