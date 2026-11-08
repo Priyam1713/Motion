@@ -3,7 +3,7 @@
 ## Cut 11 (waiting on the owner)
 - [ ] Owner reviews `DEEP-PASS-v2` and answers: font (Inter-like vs Lato), music feel (140 half-time minor vs upbeat major), end card (logo only vs script lines), real-UI screenshots of Referral page / link panel / dashboard, length (37-40 s).
 - [ ] Then build cut 11 to the reference's exact shot map, timings and sound map.
-- [ ] Separate the reference audio into stems (audio-separator) to confirm which hits are effects vs music.
+- [x] Separated the reference audio (Demucs 6-stem): no separate effects layer; effects are built into the track.
 
 ## Next
 - [x] ComfyUI SDXL smoke test passed.
