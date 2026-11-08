@@ -4,6 +4,8 @@
 - **Dot-matrix glyphs drew in a serif font** -> the canvas built its glyph grid before the web font was loaded for canvas use (`document.fonts.ready` is not enough) -> `await document.fonts.load('500 64px InterD')` for each size, and set `ctx.letterSpacing` to match the CSS.
 - **CSS mask on a full-width text line hid the wrong part** -> mask percentages are relative to the 1920 px container, not the text -> compute the wipe in pixels from the measured text bounds.
 - **Band glow had hard edges** -> a mask-image clips the element's own blur at its box -> blur the outer element, put the gradient and mask on an inner one.
+- **The white flash frame came out grey and every hard cut became a one-frame mix** -> shutter sub-samples straddle the cut -> snap each sub-sample to the side of the cut its frame belongs to (round the frame number) before seeking.
+- **A whip-zoom showed stepped copies even with 8 shutter samples** -> it moves about 700 px per frame -> add a horizontal-only SVG blur (`feGaussianBlur stdDeviation="x 0"`) scaled to camera speed, capped so words stay readable.
 - **"Frozen frames" read 0% on grain** -> per-frame grain lifts every frame difference -> compare frozen share before the grain pass, or raise the threshold.
 - **Tempo read as 92.9 BPM** -> a syncopated hit every 1.5 beats was taken for the beat -> fit a beat grid (librosa beat_track plus a phase fit on 16ths) and check that snares and 808s fall on fixed beat positions; the reference was 140 BPM half-time.
 - **Crops of "full-res" frames came out black** -> the extracted frames were 640x360, not 1280x720 -> extract key frames straight from the video with `select=eq(n,N)`.
