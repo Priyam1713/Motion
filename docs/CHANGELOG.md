@@ -123,3 +123,9 @@
 ## 2026-11-07 - MiniMax H3 pruned w6a8 (native ComfyUI) tested
 - `minimax_h3_fl2va_pruned_w6a8.safetensors` (16 GB) + 4-step turbo LoRA + MiniMaxH3SigmaShift 12/3, BasicScheduler simple 4 steps, euler, no CFG. Same plate and prompt as HyperFlow: 960x544, 124 frames, 574 s (HyperFlow 455 s). Mean frame difference 17.8 (HyperFlow 13.5). Palette held, more dramatic (glowing sun appears) but heavy smear/ghosting around frame 90. Verdict: more motion, less clean than HyperFlow. Licence-limited: test only. Audio not evaluated (generated audio already judged unusable).
 - Scripts: `tools/comfy_h3_w6a8_test.py`, `comfy_h3_w6a8_run.sh`.
+
+## 2026-11-09 - Cut 13: brand example film (new script)
+- New 70.2 s film from `brand_Refer_and_Earn_Final_Revised_Script.pdf`; reuses the cut 12 toolchain (seek(t) HTML page, render_seek, Kokoro af_heart, synth SFX kit + bed). Folder `cuts/cut13`, storyboard `storyboard/cut13-refer-and-earn.md`.
+- Concept: referral network graph (YOU, direct, second-level nodes, link pill, fee tokens flowing up, 20-cell share bar for 15% / 10%), 3-card getting-started scene, KOL connect scene, end card with compliance line. Lens kept as brand motif only.
+- New SFX cue kinds: join, join2, linkGo, cell, coinIn, check, card. Mix -16.0 LUFS, -1.5 dBTP. Not yet listened to by the owner.
+- Script compliance: VO verbatim, "eligible platform fees" kept, no earnings figures, tracker is abstract (no fake dashboard numbers).

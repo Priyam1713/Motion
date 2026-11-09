@@ -53,3 +53,5 @@
 - (9 Nov 2026) Kokoro af_heart per-sentence clips with word timestamps drive both the picture (landing a number on the word 'hundred') and the subtitles.
 
 - (9 Nov 2026) One cue list (`window.CUES`) drives both picture-synced sound designs, so the whole SFX/music layer can be redone and remuxed in 30 s with `build_audio.py` without re-rendering video.
+
+- Cut 13: node/edge/coin helpers in `cuts/cut13/film.js` (mkNode, mkEdge, coinSet, pbar) make a referral-network film quickly; 20-cell bar maps 15% = 3 cells, 10% = 2 cells exactly.

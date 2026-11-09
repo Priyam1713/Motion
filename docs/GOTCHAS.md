@@ -76,3 +76,6 @@
 - (9 Nov 2026) Openverse/Freesound foley: use `license=cc0,pdm` with 1-2 word queries (long phrases return nothing); a failed download leaves a 0-byte file, delete and retry; the Wikimedia 'LL-' results are speech, skip them; Wikimedia returns 429 if hit fast.
 - (9 Nov 2026) Word timings from Kokoro tokenise spoken forms ('U S D T', 'Uni Ocean'), so look up 'at', 'ocean' etc., not 'brand' (the lookup threw and silently blanked the last scene until checked with a page-error probe, cuts/cut12/dbg.mjs).
 - (9 Nov 2026) Bash tool blocks `rm` with a glob after a cd; use a fresh directory instead of clearing one.
+
+- Kokoro lives in `.cache/kokoro-venv` (system python lacks soundfile): run `.cache/kokoro-venv/Scripts/python.exe gen_vo.py af_heart 1.08`.
+- Logo mark bbox is 151x65 in the 492x66 logo viewBox (use viewBox "0 0 151 65" to place the mark alone); purple mark needs a light background to read.
