@@ -51,3 +51,5 @@ Only after the toolkit is maxed out. No new cut until the director asks.
 - [ ] Owner listens to cut 12 v2 (bling SFX + bed); tune levels (SFX_G, MUS_G in build_audio.py) or the kit by ear.
 
 - Cut 13: owner listening pass and sign-off; confirm referral terms (commission base, eligibility, payout timing) with the client before publishing; replace abstract tracker with real dashboard visuals only if the feature exists.
+
+- Cut 15: owner watch + listen pass (score balance, SFX sync feel, camera pacing). Possible upgrades: true refraction/ray-traced glass via Blender, real brand referral UI if the feature exists, mastering the bed against a reference track.

@@ -79,3 +79,7 @@
 
 - Kokoro lives in `.cache/kokoro-venv` (system python lacks soundfile): run `.cache/kokoro-venv/Scripts/python.exe gen_vo.py af_heart 1.08`.
 - Logo mark bbox is 151x65 in the 492x66 logo viewBox (use viewBox "0 0 151 65" to place the mark alone); purple mark needs a light background to read.
+
+- Windows Smart App Control (enforcing since 2026-11-09) blocks unsigned compiled Python modules (blis/spacy `.pyd`), so the Windows Kokoro venv no longer imports. Do not bypass; run Kokoro in WSL: `~/kokoro-venv` in Ubuntu-24.04, HF_HOME=/mnt/d/client/Motion/.cache/hf.
+- CSS filter/opacity on a `preserve-3d` parent flattens its children: apply blur/fade per leaf object and blur the outer wrapper (not #cam) for transitions.
+- Bloom in ffmpeg: threshold in RGB (`format=gbrp` + `lutrgb`) then `blend=addition`; thresholding only luma (lutyuv) leaves chroma and washes the whole frame purple.

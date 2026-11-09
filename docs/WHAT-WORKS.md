@@ -56,3 +56,5 @@
 
 - Cut 13: node/edge/coin helpers in `cuts/cut13/film.js` (mkNode, mkEdge, coinSet, pbar) make a referral-network film quickly; 20-cell bar maps 15% = 3 cells, 10% = 2 cells exactly.
 - Theme change without re-doing VO: copy the previous cut folder (assets, audio/vo_af_heart, data.js), rewrite CSS + scene files only; light theme needs the logo word recolored (it is fill white) or use the white logo on a gradient card.
+
+- Cinematic look without a 3D engine: CSS `perspective` stage + `preserve-3d` camera element, objects as 3D planes, blur per object from distance to a focus plane (rack focus), stacked copies for extruded type, flash+anamorphic streak as the cut. Keep filters/opacity on leaf objects only. Beat-lock: snap VO starts and scene boundaries to the bar grid in make_data.py, snap cues to 16ths, pitch SFX from the current chord.

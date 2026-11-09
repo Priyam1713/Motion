@@ -48,3 +48,5 @@
 - Do not: let two scenes cross-dissolve with readable text (double headers at 34.7 s in the first render); finish the exit before the next scene's text enters.
 
 - Do (9 Nov 2026, owner feedback): crypto/fintech explainers want catchy bling, token, arcade-style SFX (bells, coin pings, pitched blips) in the music's key, plus a quiet upbeat bed; realistic foley (slides, slams, thumps) reads as whooshes and slams and was rejected. Keep SFX synthesized and pentatonic; weight only as a soft thump under a bell.
+
+- DO study the client's liked reference (movement, depth, grade, pacing) before choosing a look; "slideshow" feedback means flat cards + fades. DON'T use `vignette` in ffmpeg on text-heavy frames (it greys the whites); put the vignette in the page.

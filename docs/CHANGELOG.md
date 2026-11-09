@@ -133,3 +133,10 @@
 ## 2026-11-09 - Cut 14: example film in a new light "ripple" theme
 - Owner feedback on cut 13: great, but the base theme repeats the previous cut. Rebuilt the same script (same VO/timings) with a new identity: light paper background, ink type, ripple-on-water concept, concentric-ring referral diagram, donut share chart, circular ripple wipes, gradient end card. Folder `cuts/cut14`, storyboard `storyboard/cut14-refer-and-earn-light-ripple.md`.
 - Audio: added 'drop' water-drop SFX cue, bed at 108 BPM C-Am-F-G. Cut 13 kept as the dark-theme alternative.
+
+## 2026-11-09 - Cut 15: cinematic example film (new reference studied, new BGM, beat-locked SFX)
+- Owner feedback on cut 14: reads as a slideshow; wants a movie-like, camera-shot, high-quality look like the WhatsApp reference (`references/ref-cinematic/ref.mp4`), brand colours (black/purple/white), different BGM that syncs with the SFX, higher BPM.
+- Studied the reference (frame sheet + audio) and rebuilt the film as one 3D virtual-camera stage in the deterministic seek(t) renderer: CSS 3D planes, camera dolly/orbit/truck with handheld breathing, per-object depth of field and rack focus, extruded type, glass UI cards, 3D network beams, cursor click, light-flare cuts. Folder `cuts/cut15`, storyboard `storyboard/cut15-refer-and-earn-cinematic.md`.
+- Post: bloom (RGB threshold + blur, additive), grain, vignette in the page, 24 fps with 4-sub-frame motion blur.
+- Audio rebuilt from scratch: 124 BPM (was 108), A minor, supersaw pad + sub bass + 16th pluck arp + drums with sidechain, risers/impacts on every scene boundary. VO starts and scene boundaries are snapped to the beat grid (`make_data.py`), all SFX cues snapped to 16ths and pitched from the current chord. Levels: VO -16.3, SFX -21, music -26.5 LUFS; mix -16.1 LUFS / -1.5 dBTP.
+- Kokoro regenerated through WSL (Windows venv blocked by Smart App Control, see GOTCHAS).
