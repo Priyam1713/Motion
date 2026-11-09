@@ -55,3 +55,4 @@
 - (9 Nov 2026) One cue list (`window.CUES`) drives both picture-synced sound designs, so the whole SFX/music layer can be redone and remuxed in 30 s with `build_audio.py` without re-rendering video.
 
 - Cut 13: node/edge/coin helpers in `cuts/cut13/film.js` (mkNode, mkEdge, coinSet, pbar) make a referral-network film quickly; 20-cell bar maps 15% = 3 cells, 10% = 2 cells exactly.
+- Theme change without re-doing VO: copy the previous cut folder (assets, audio/vo_af_heart, data.js), rewrite CSS + scene files only; light theme needs the logo word recolored (it is fill white) or use the white logo on a gradient card.

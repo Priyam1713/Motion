@@ -129,3 +129,7 @@
 - Concept: referral network graph (YOU, direct, second-level nodes, link pill, fee tokens flowing up, 20-cell share bar for 15% / 10%), 3-card getting-started scene, KOL connect scene, end card with compliance line. Lens kept as brand motif only.
 - New SFX cue kinds: join, join2, linkGo, cell, coinIn, check, card. Mix -16.0 LUFS, -1.5 dBTP. Not yet listened to by the owner.
 - Script compliance: VO verbatim, "eligible platform fees" kept, no earnings figures, tracker is abstract (no fake dashboard numbers).
+
+## 2026-11-09 - Cut 14: example film in a new light "ripple" theme
+- Owner feedback on cut 13: great, but the base theme repeats the previous cut. Rebuilt the same script (same VO/timings) with a new identity: light paper background, ink type, ripple-on-water concept, concentric-ring referral diagram, donut share chart, circular ripple wipes, gradient end card. Folder `cuts/cut14`, storyboard `storyboard/cut14-refer-and-earn-light-ripple.md`.
+- Audio: added 'drop' water-drop SFX cue, bed at 108 BPM C-Am-F-G. Cut 13 kept as the dark-theme alternative.
