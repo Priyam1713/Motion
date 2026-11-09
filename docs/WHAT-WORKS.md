@@ -51,3 +51,5 @@
 - (9 Nov 2026) Magnifier as a cloned DOM: `cloneNode(true)` of the whole animated world, scaled and translated inside a circular overflow:hidden glass, gives a true magnifier on live text and UI for any frame in `seek(t)`; a `.rv` rule makes title words visible inside the lens before the world reveals them (title is revealed by the lens). Row reorders as a sum of eased rank deltas (`pos = r0 + sum(delta * ease(t - te))`) never overlap rows or jump when two changes are close.
 - (9 Nov 2026) Subtitle-strip pixel diff at 30 fps recovers voice-over timing from a finished video with no speech-to-text model.
 - (9 Nov 2026) Kokoro af_heart per-sentence clips with word timestamps drive both the picture (landing a number on the word 'hundred') and the subtitles.
+
+- (9 Nov 2026) One cue list (`window.CUES`) drives both picture-synced sound designs, so the whole SFX/music layer can be redone and remuxed in 30 s with `build_audio.py` without re-rendering video.

@@ -47,3 +47,5 @@ Only after the toolkit is maxed out. No new cut until the director asks.
 - [ ] Owner listens to `previews/uniocean_every-decimal-matters_cut12_16x9_30fps.mp4`: voice choice (af_heart vs another Kokoro voice), foley stand-ins (typewriter for adding machine, laid weights for brass), loudness.
 - [ ] Run qa_video.py / Earshot on cut 12; fix flagged holds.
 - [ ] Optional: true refraction lens (WebGL/Blender), real UI screenshots of the forecast flow to replace the rebuilt UI.
+
+- [ ] Owner listens to cut 12 v2 (bling SFX + bed); tune levels (SFX_G, MUS_G in build_audio.py) or the kit by ear.
